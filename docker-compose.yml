@@ -1,0 +1,25 @@
+version: '3.4'
+volumes:
+  local_mssql_data: {}
+
+services:
+  sl.ado:
+    image: ${DOCKER_REGISTRY-}slado
+    build:
+      context: .
+      dockerfile: SL.Ado/Dockerfile
+    ports:
+    - "443:443"
+    - "80:80"
+    depends_on:
+    - database
+  database:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    ports:
+      - "1433:1433"
+    environment: 
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "P@ssw0rd"
+      MSSQL_PID: "Express"
+    volumes:
+      -  local_mssql_data:/var/opt/mssql/data
