@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Persistence", "SL.Persis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Domain", "SL.Domain\SL.Domain.csproj", "{969FD512-F300-4C59-A220-720EC7100D1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Tests", "SL.Tests\SL.Tests.csproj", "{E542FEA9-6453-492F-AED2-84891F825BFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{969FD512-F300-4C59-A220-720EC7100D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{969FD512-F300-4C59-A220-720EC7100D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{969FD512-F300-4C59-A220-720EC7100D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E542FEA9-6453-492F-AED2-84891F825BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E542FEA9-6453-492F-AED2-84891F825BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E542FEA9-6453-492F-AED2-84891F825BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E542FEA9-6453-492F-AED2-84891F825BFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
